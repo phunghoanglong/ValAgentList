@@ -1,0 +1,3171 @@
+diff --git a/AgentList.xcodeproj/project.pbxproj b/AgentList.xcodeproj/project.pbxproj
+index af7dc00..0f00674 100644
+--- a/AgentList.xcodeproj/project.pbxproj
++++ b/AgentList.xcodeproj/project.pbxproj
+@@ -11,6 +11,16 @@
+ 		68CB9EBE2C617AC9000B29F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9EBD2C617AC9000B29F3 /* ContentView.swift */; };
+ 		68CB9EC02C617ACB000B29F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CB9EBF2C617ACB000B29F3 /* Assets.xcassets */; };
+ 		68CB9EC32C617ACB000B29F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CB9EC22C617ACB000B29F3 /* Preview Assets.xcassets */; };
++		68CB9ECA2C617B9B000B29F3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9EC92C617B9B000B29F3 /* CircleImage.swift */; };
++		68CB9ED02C618020000B29F3 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9ECF2C618020000B29F3 /* Agent.swift */; };
++		68CB9ED22C61808D000B29F3 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9ED12C61808D000B29F3 /* ModelData.swift */; };
++		68CB9ED52C61860A000B29F3 /* AgentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9ED42C61860A000B29F3 /* AgentCard.swift */; };
++		68CB9ED72C618712000B29F3 /* AgentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9ED62C618712000B29F3 /* AgentList.swift */; };
++		68CB9ED92C618779000B29F3 /* AgentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9ED82C618779000B29F3 /* AgentRow.swift */; };
++		68CB9EDB2C618824000B29F3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9EDA2C618824000B29F3 /* MapView.swift */; };
++		68CB9EDD2C61928C000B29F3 /* agents.json in Resources */ = {isa = PBXBuildFile; fileRef = 68CB9EDC2C61928C000B29F3 /* agents.json */; };
++		68CB9EE32C61B07D000B29F3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9EE22C61B07D000B29F3 /* SearchBar.swift */; };
++		68CB9EEF2C61DA80000B29F3 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB9EEE2C61DA80000B29F3 /* Welcome.swift */; };
+ /* End PBXBuildFile section */
+ 
+ /* Begin PBXFileReference section */
+@@ -19,6 +29,18 @@
+ 		68CB9EBD2C617AC9000B29F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+ 		68CB9EBF2C617ACB000B29F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+ 		68CB9EC22C617ACB000B29F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
++		68CB9EC92C617B9B000B29F3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
++		68CB9ECF2C618020000B29F3 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
++		68CB9ED12C61808D000B29F3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
++		68CB9ED42C61860A000B29F3 /* AgentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCard.swift; sourceTree = "<group>"; };
++		68CB9ED62C618712000B29F3 /* AgentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentList.swift; sourceTree = "<group>"; };
++		68CB9ED82C618779000B29F3 /* AgentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRow.swift; sourceTree = "<group>"; };
++		68CB9EDA2C618824000B29F3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
++		68CB9EDC2C61928C000B29F3 /* agents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = agents.json; path = "../../../../../Downloads/SSET-Contact-List-iOS-main/ContactList/Model/agents.json"; sourceTree = "<group>"; };
++		68CB9EE22C61B07D000B29F3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
++		68CB9EE62C61CE0E000B29F3 /* Coiny-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coiny-Regular.ttf"; sourceTree = "<group>"; };
++		68CB9EEA2C61D024000B29F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
++		68CB9EEE2C61DA80000B29F3 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+ /* End PBXFileReference section */
+ 
+ /* Begin PBXFrameworksBuildPhase section */
+@@ -35,6 +57,7 @@
+ 		68CB9EAF2C617AC9000B29F3 = {
+ 			isa = PBXGroup;
+ 			children = (
++				68CB9EE62C61CE0E000B29F3 /* Coiny-Regular.ttf */,
+ 				68CB9EBA2C617AC9000B29F3 /* AgentList */,
+ 				68CB9EB92C617AC9000B29F3 /* Products */,
+ 			);
+@@ -51,8 +74,10 @@
+ 		68CB9EBA2C617AC9000B29F3 /* AgentList */ = {
+ 			isa = PBXGroup;
+ 			children = (
++				68CB9EEA2C61D024000B29F3 /* Info.plist */,
++				68CB9ECE2C61800F000B29F3 /* Model */,
++				68CB9ECB2C617BCE000B29F3 /* Views */,
+ 				68CB9EBB2C617AC9000B29F3 /* AgentListApp.swift */,
+-				68CB9EBD2C617AC9000B29F3 /* ContentView.swift */,
+ 				68CB9EBF2C617ACB000B29F3 /* Assets.xcassets */,
+ 				68CB9EC12C617ACB000B29F3 /* Preview Content */,
+ 			);
+@@ -67,6 +92,31 @@
+ 			path = "Preview Content";
+ 			sourceTree = "<group>";
+ 		};
++		68CB9ECB2C617BCE000B29F3 /* Views */ = {
++			isa = PBXGroup;
++			children = (
++				68CB9EBD2C617AC9000B29F3 /* ContentView.swift */,
++				68CB9EE22C61B07D000B29F3 /* SearchBar.swift */,
++				68CB9EDA2C618824000B29F3 /* MapView.swift */,
++				68CB9EC92C617B9B000B29F3 /* CircleImage.swift */,
++				68CB9ED42C61860A000B29F3 /* AgentCard.swift */,
++				68CB9ED62C618712000B29F3 /* AgentList.swift */,
++				68CB9ED82C618779000B29F3 /* AgentRow.swift */,
++				68CB9EEE2C61DA80000B29F3 /* Welcome.swift */,
++			);
++			path = Views;
++			sourceTree = "<group>";
++		};
++		68CB9ECE2C61800F000B29F3 /* Model */ = {
++			isa = PBXGroup;
++			children = (
++				68CB9EDC2C61928C000B29F3 /* agents.json */,
++				68CB9ECF2C618020000B29F3 /* Agent.swift */,
++				68CB9ED12C61808D000B29F3 /* ModelData.swift */,
++			);
++			path = Model;
++			sourceTree = "<group>";
++		};
+ /* End PBXGroup section */
+ 
+ /* Begin PBXNativeTarget section */
+@@ -126,6 +176,7 @@
+ 			buildActionMask = 2147483647;
+ 			files = (
+ 				68CB9EC32C617ACB000B29F3 /* Preview Assets.xcassets in Resources */,
++				68CB9EDD2C61928C000B29F3 /* agents.json in Resources */,
+ 				68CB9EC02C617ACB000B29F3 /* Assets.xcassets in Resources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+@@ -137,8 +188,17 @@
+ 			isa = PBXSourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
++				68CB9ED52C61860A000B29F3 /* AgentCard.swift in Sources */,
++				68CB9ED02C618020000B29F3 /* Agent.swift in Sources */,
+ 				68CB9EBE2C617AC9000B29F3 /* ContentView.swift in Sources */,
+ 				68CB9EBC2C617AC9000B29F3 /* AgentListApp.swift in Sources */,
++				68CB9ED92C618779000B29F3 /* AgentRow.swift in Sources */,
++				68CB9ED72C618712000B29F3 /* AgentList.swift in Sources */,
++				68CB9EDB2C618824000B29F3 /* MapView.swift in Sources */,
++				68CB9ECA2C617B9B000B29F3 /* CircleImage.swift in Sources */,
++				68CB9EE32C61B07D000B29F3 /* SearchBar.swift in Sources */,
++				68CB9EEF2C61DA80000B29F3 /* Welcome.swift in Sources */,
++				68CB9ED22C61808D000B29F3 /* ModelData.swift in Sources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+ 		};
+@@ -275,6 +335,7 @@
+ 				DEVELOPMENT_TEAM = 42FQ4H67Q2;
+ 				ENABLE_PREVIEWS = YES;
+ 				GENERATE_INFOPLIST_FILE = YES;
++				INFOPLIST_FILE = AgentList/Info.plist;
+ 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+ 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+ 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+@@ -304,6 +365,7 @@
+ 				DEVELOPMENT_TEAM = 42FQ4H67Q2;
+ 				ENABLE_PREVIEWS = YES;
+ 				GENERATE_INFOPLIST_FILE = YES;
++				INFOPLIST_FILE = AgentList/Info.plist;
+ 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+ 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+ 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+diff --git a/AgentList.xcodeproj/xcshareddata/xcschemes/AgentList.xcscheme b/AgentList.xcodeproj/xcshareddata/xcschemes/AgentList.xcscheme
+new file mode 100644
+index 0000000..e6c3a5b
+--- /dev/null
++++ b/AgentList.xcodeproj/xcshareddata/xcschemes/AgentList.xcscheme
+@@ -0,0 +1,85 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<Scheme
++   LastUpgradeVersion = "1540"
++   version = "1.7">
++   <BuildAction
++      parallelizeBuildables = "YES"
++      buildImplicitDependencies = "YES"
++      buildArchitectures = "Automatic">
++      <BuildActionEntries>
++         <BuildActionEntry
++            buildForTesting = "YES"
++            buildForRunning = "YES"
++            buildForProfiling = "YES"
++            buildForArchiving = "YES"
++            buildForAnalyzing = "YES">
++            <BuildableReference
++               BuildableIdentifier = "primary"
++               BlueprintIdentifier = "68CB9EB72C617AC9000B29F3"
++               BuildableName = "AgentList.app"
++               BlueprintName = "AgentList"
++               ReferencedContainer = "container:AgentList.xcodeproj">
++            </BuildableReference>
++         </BuildActionEntry>
++      </BuildActionEntries>
++   </BuildAction>
++   <TestAction
++      buildConfiguration = "Debug"
++      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
++      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
++      shouldUseLaunchSchemeArgsEnv = "YES"
++      shouldAutocreateTestPlan = "YES">
++   </TestAction>
++   <LaunchAction
++      buildConfiguration = "Debug"
++      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
++      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
++      launchStyle = "0"
++      useCustomWorkingDirectory = "NO"
++      ignoresPersistentStateOnLaunch = "NO"
++      debugDocumentVersioning = "YES"
++      debugServiceExtension = "internal"
++      allowLocationSimulation = "YES">
++      <BuildableProductRunnable
++         runnableDebuggingMode = "0">
++         <BuildableReference
++            BuildableIdentifier = "primary"
++            BlueprintIdentifier = "68CB9EB72C617AC9000B29F3"
++            BuildableName = "AgentList.app"
++            BlueprintName = "AgentList"
++            ReferencedContainer = "container:AgentList.xcodeproj">
++         </BuildableReference>
++      </BuildableProductRunnable>
++      <EnvironmentVariables>
++         <EnvironmentVariable
++            key = "IDEPreferLogStreaming"
++            value = "YES"
++            isEnabled = "YES">
++         </EnvironmentVariable>
++      </EnvironmentVariables>
++   </LaunchAction>
++   <ProfileAction
++      buildConfiguration = "Release"
++      shouldUseLaunchSchemeArgsEnv = "YES"
++      savedToolIdentifier = ""
++      useCustomWorkingDirectory = "NO"
++      debugDocumentVersioning = "YES">
++      <BuildableProductRunnable
++         runnableDebuggingMode = "0">
++         <BuildableReference
++            BuildableIdentifier = "primary"
++            BlueprintIdentifier = "68CB9EB72C617AC9000B29F3"
++            BuildableName = "AgentList.app"
++            BlueprintName = "AgentList"
++            ReferencedContainer = "container:AgentList.xcodeproj">
++         </BuildableReference>
++      </BuildableProductRunnable>
++   </ProfileAction>
++   <AnalyzeAction
++      buildConfiguration = "Debug">
++   </AnalyzeAction>
++   <ArchiveAction
++      buildConfiguration = "Release"
++      revealArchiveInOrganizer = "YES">
++   </ArchiveAction>
++</Scheme>
+diff --git a/AgentList.xcodeproj/xcuserdata/longphung.xcuserdatad/xcschemes/xcschememanagement.plist b/AgentList.xcodeproj/xcuserdata/longphung.xcuserdatad/xcschemes/xcschememanagement.plist
+index 99a80e5..d78197d 100644
+--- a/AgentList.xcodeproj/xcuserdata/longphung.xcuserdatad/xcschemes/xcschememanagement.plist
++++ b/AgentList.xcodeproj/xcuserdata/longphung.xcuserdatad/xcschemes/xcschememanagement.plist
+@@ -10,5 +10,13 @@
+ 			<integer>0</integer>
+ 		</dict>
+ 	</dict>
++	<key>SuppressBuildableAutocreation</key>
++	<dict>
++		<key>68CB9EB72C617AC9000B29F3</key>
++		<dict>
++			<key>primary</key>
++			<true/>
++		</dict>
++	</dict>
+ </dict>
+ </plist>
+diff --git a/AgentList/AgentListApp.swift b/AgentList/AgentListApp.swift
+index 05d5d7a..1d2d679 100644
+--- a/AgentList/AgentListApp.swift
++++ b/AgentList/AgentListApp.swift
+@@ -1,9 +1,14 @@
+-//
+-//  AgentListApp.swift
+-//  AgentList
+-//
+-//  Created by Long Phung on 6/8/24.
+-//
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
+ 
+ import SwiftUI
+ 
+diff --git a/AgentList/Assets.xcassets/AppIcon.appiconset/Contents.json b/AgentList/Assets.xcassets/AppIcon.appiconset/Contents.json
+index 13613e3..c307e6f 100644
+--- a/AgentList/Assets.xcassets/AppIcon.appiconset/Contents.json
++++ b/AgentList/Assets.xcassets/AppIcon.appiconset/Contents.json
+@@ -1,6 +1,7 @@
+ {
+   "images" : [
+     {
++      "filename" : "valorant-icon@3x_resized.jpg",
+       "idiom" : "universal",
+       "platform" : "ios",
+       "size" : "1024x1024"
+diff --git a/AgentList/Assets.xcassets/AppIcon.appiconset/valorant-icon@3x_resized.jpg b/AgentList/Assets.xcassets/AppIcon.appiconset/valorant-icon@3x_resized.jpg
+new file mode 100644
+index 0000000..163e80b
+Binary files /dev/null and b/AgentList/Assets.xcassets/AppIcon.appiconset/valorant-icon@3x_resized.jpg differ
+diff --git a/AgentList/Assets.xcassets/colors/Contents.json b/AgentList/Assets.xcassets/colors/Contents.json
+new file mode 100644
+index 0000000..73c0059
+--- /dev/null
++++ b/AgentList/Assets.xcassets/colors/Contents.json
+@@ -0,0 +1,6 @@
++{
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/colors/valorant-dark.colorset/Contents.json b/AgentList/Assets.xcassets/colors/valorant-dark.colorset/Contents.json
+new file mode 100644
+index 0000000..61b1fee
+--- /dev/null
++++ b/AgentList/Assets.xcassets/colors/valorant-dark.colorset/Contents.json
+@@ -0,0 +1,38 @@
++{
++  "colors" : [
++    {
++      "color" : {
++        "color-space" : "srgb",
++        "components" : {
++          "alpha" : "1.000",
++          "blue" : "42",
++          "green" : "30",
++          "red" : "20"
++        }
++      },
++      "idiom" : "universal"
++    },
++    {
++      "appearances" : [
++        {
++          "appearance" : "luminosity",
++          "value" : "dark"
++        }
++      ],
++      "color" : {
++        "color-space" : "srgb",
++        "components" : {
++          "alpha" : "1.000",
++          "blue" : "42",
++          "green" : "30",
++          "red" : "20"
++        }
++      },
++      "idiom" : "universal"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/colors/valorant-red.colorset/Contents.json b/AgentList/Assets.xcassets/colors/valorant-red.colorset/Contents.json
+new file mode 100644
+index 0000000..9cf4f55
+--- /dev/null
++++ b/AgentList/Assets.xcassets/colors/valorant-red.colorset/Contents.json
+@@ -0,0 +1,41 @@
++{
++  "colors" : [
++    {
++      "color" : {
++        "color-space" : "srgb",
++        "components" : {
++          "alpha" : "1.000",
++          "blue" : "84",
++          "green" : "70",
++          "red" : "255"
++        }
++      },
++      "idiom" : "universal"
++    },
++    {
++      "appearances" : [
++        {
++          "appearance" : "luminosity",
++          "value" : "dark"
++        }
++      ],
++      "color" : {
++        "color-space" : "srgb",
++        "components" : {
++          "alpha" : "1.000",
++          "blue" : "84",
++          "green" : "70",
++          "red" : "255"
++        }
++      },
++      "idiom" : "universal"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  },
++  "properties" : {
++    "localizable" : true
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/Contents.json b/AgentList/Assets.xcassets/images/Contents.json
+new file mode 100644
+index 0000000..73c0059
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/Contents.json
+@@ -0,0 +1,6 @@
++{
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/astra-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/astra-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..5a47ca6
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/astra-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "astra-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "astra-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "astra-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill.png b/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill.png
+new file mode 100644
+index 0000000..01b685e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill@2x.png b/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill@2x.png
+new file mode 100644
+index 0000000..0867246
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill@3x.png b/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill@3x.png
+new file mode 100644
+index 0000000..19856ef
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/astra-skill.imageset/astra-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/astra.imageset/Contents.json b/AgentList/Assets.xcassets/images/astra.imageset/Contents.json
+new file mode 100644
+index 0000000..1061125
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/astra.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "astra.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "astra@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "astra@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/astra.imageset/astra.jpg b/AgentList/Assets.xcassets/images/astra.imageset/astra.jpg
+new file mode 100644
+index 0000000..002a0cf
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/astra.imageset/astra.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/astra.imageset/astra@2x.jpg b/AgentList/Assets.xcassets/images/astra.imageset/astra@2x.jpg
+new file mode 100644
+index 0000000..f939787
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/astra.imageset/astra@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/astra.imageset/astra@3x.jpg b/AgentList/Assets.xcassets/images/astra.imageset/astra@3x.jpg
+new file mode 100644
+index 0000000..74a3957
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/astra.imageset/astra@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/breach-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/breach-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..195d11c
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/breach-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "breach-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "breach-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "breach-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill.png b/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill.png
+new file mode 100644
+index 0000000..b677922
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill@2x.png b/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill@2x.png
+new file mode 100644
+index 0000000..00ee3ef
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill@3x.png b/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill@3x.png
+new file mode 100644
+index 0000000..6b5f14e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/breach-skill.imageset/breach-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/breach.imageset/Contents.json b/AgentList/Assets.xcassets/images/breach.imageset/Contents.json
+new file mode 100644
+index 0000000..f85f18b
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/breach.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "breach.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "breach@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "breach@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/breach.imageset/breach.jpg b/AgentList/Assets.xcassets/images/breach.imageset/breach.jpg
+new file mode 100644
+index 0000000..44abd60
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/breach.imageset/breach.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/breach.imageset/breach@2x.jpg b/AgentList/Assets.xcassets/images/breach.imageset/breach@2x.jpg
+new file mode 100644
+index 0000000..322f011
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/breach.imageset/breach@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/breach.imageset/breach@3x.jpg b/AgentList/Assets.xcassets/images/breach.imageset/breach@3x.jpg
+new file mode 100644
+index 0000000..1c319d4
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/breach.imageset/breach@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/brimstone-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..d789e13
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "brimstone-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "brimstone-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "brimstone-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill.png b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill.png
+new file mode 100644
+index 0000000..c9a5929
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill@2x.png b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill@2x.png
+new file mode 100644
+index 0000000..30c564f
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill@3x.png b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill@3x.png
+new file mode 100644
+index 0000000..07b3720
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/brimstone-skill.imageset/brimstone-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/brimstone.imageset/Contents.json b/AgentList/Assets.xcassets/images/brimstone.imageset/Contents.json
+new file mode 100644
+index 0000000..ac45d0a
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/brimstone.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "brimstone.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "brimstone@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "brimstone@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone.jpg b/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone.jpg
+new file mode 100644
+index 0000000..38ad048
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone@2x.jpg b/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone@2x.jpg
+new file mode 100644
+index 0000000..169c423
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone@3x.jpg b/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone@3x.jpg
+new file mode 100644
+index 0000000..3a54be3
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/brimstone.imageset/brimstone@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/chamber-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/chamber-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..512a0c3
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/chamber-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "chamber-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "chamber-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "chamber-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill.png b/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill.png
+new file mode 100644
+index 0000000..6ac9ce8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill@2x.png b/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill@2x.png
+new file mode 100644
+index 0000000..3c867db
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill@3x.png b/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill@3x.png
+new file mode 100644
+index 0000000..f6aacec
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/chamber-skill.imageset/chamber-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/chamber.imageset/Contents.json b/AgentList/Assets.xcassets/images/chamber.imageset/Contents.json
+new file mode 100644
+index 0000000..b1a89e2
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/chamber.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "chamber.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "chamber@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "chamber@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/chamber.imageset/chamber.jpg b/AgentList/Assets.xcassets/images/chamber.imageset/chamber.jpg
+new file mode 100644
+index 0000000..ff835d8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/chamber.imageset/chamber.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/chamber.imageset/chamber@2x.jpg b/AgentList/Assets.xcassets/images/chamber.imageset/chamber@2x.jpg
+new file mode 100644
+index 0000000..7114715
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/chamber.imageset/chamber@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/chamber.imageset/chamber@3x.jpg b/AgentList/Assets.xcassets/images/chamber.imageset/chamber@3x.jpg
+new file mode 100644
+index 0000000..8679ccf
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/chamber.imageset/chamber@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/clove-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/clove-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..f58d26f
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/clove-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "clove-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "clove-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "clove-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill.png b/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill.png
+new file mode 100644
+index 0000000..06ede3a
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill@2x.png b/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill@2x.png
+new file mode 100644
+index 0000000..4a4ae0e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill@3x.png b/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill@3x.png
+new file mode 100644
+index 0000000..f90f30d
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/clove-skill.imageset/clove-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/clove.imageset/Contents.json b/AgentList/Assets.xcassets/images/clove.imageset/Contents.json
+new file mode 100644
+index 0000000..b096de9
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/clove.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "clove.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "clove@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "clove@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/clove.imageset/clove.jpg b/AgentList/Assets.xcassets/images/clove.imageset/clove.jpg
+new file mode 100644
+index 0000000..cda2919
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/clove.imageset/clove.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/clove.imageset/clove@2x.jpg b/AgentList/Assets.xcassets/images/clove.imageset/clove@2x.jpg
+new file mode 100644
+index 0000000..86e8d01
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/clove.imageset/clove@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/clove.imageset/clove@3x.jpg b/AgentList/Assets.xcassets/images/clove.imageset/clove@3x.jpg
+new file mode 100644
+index 0000000..0611495
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/clove.imageset/clove@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/cypher-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/cypher-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..ea77bb9
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/cypher-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "cypher-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "cypher-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "cypher-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill.png b/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill.png
+new file mode 100644
+index 0000000..ebc56ee
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill@2x.png b/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill@2x.png
+new file mode 100644
+index 0000000..c7daaea
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill@3x.png b/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill@3x.png
+new file mode 100644
+index 0000000..2259d27
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/cypher-skill.imageset/cypher-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/cypher.imageset/Contents.json b/AgentList/Assets.xcassets/images/cypher.imageset/Contents.json
+new file mode 100644
+index 0000000..5d45266
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/cypher.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "cypher.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "cypher@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "cypher@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/cypher.imageset/cypher.jpg b/AgentList/Assets.xcassets/images/cypher.imageset/cypher.jpg
+new file mode 100644
+index 0000000..ad130ca
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/cypher.imageset/cypher.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/cypher.imageset/cypher@2x.jpg b/AgentList/Assets.xcassets/images/cypher.imageset/cypher@2x.jpg
+new file mode 100644
+index 0000000..1b6a0b5
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/cypher.imageset/cypher@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/cypher.imageset/cypher@3x.jpg b/AgentList/Assets.xcassets/images/cypher.imageset/cypher@3x.jpg
+new file mode 100644
+index 0000000..9ef98f1
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/cypher.imageset/cypher@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/deadlock-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..6cf9fb4
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "deadlock-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "deadlock-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "deadlock-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill.png b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill.png
+new file mode 100644
+index 0000000..2264959
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill@2x.png b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill@2x.png
+new file mode 100644
+index 0000000..67e8c85
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill@3x.png b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill@3x.png
+new file mode 100644
+index 0000000..bd59b89
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/deadlock-skill.imageset/deadlock-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/deadlock.imageset/Contents.json b/AgentList/Assets.xcassets/images/deadlock.imageset/Contents.json
+new file mode 100644
+index 0000000..974d7ac
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/deadlock.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "deadlock.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "deadlock@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "deadlock@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock.jpg b/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock.jpg
+new file mode 100644
+index 0000000..2e7cb7f
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock@2x.jpg b/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock@2x.jpg
+new file mode 100644
+index 0000000..58c77f9
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock@3x.jpg b/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock@3x.jpg
+new file mode 100644
+index 0000000..3d883a9
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/deadlock.imageset/deadlock@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/fade-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/fade-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..684b229
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/fade-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "fade-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "fade-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "fade-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill.png b/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill.png
+new file mode 100644
+index 0000000..a06e8fd
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill@2x.png b/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill@2x.png
+new file mode 100644
+index 0000000..d01a93e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill@3x.png b/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill@3x.png
+new file mode 100644
+index 0000000..9fc7cb4
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/fade-skill.imageset/fade-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/fade.imageset/Contents.json b/AgentList/Assets.xcassets/images/fade.imageset/Contents.json
+new file mode 100644
+index 0000000..e9d9c92
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/fade.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "fade.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "fade@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "fade@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/fade.imageset/fade.jpg b/AgentList/Assets.xcassets/images/fade.imageset/fade.jpg
+new file mode 100644
+index 0000000..f9e50a5
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/fade.imageset/fade.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/fade.imageset/fade@2x.jpg b/AgentList/Assets.xcassets/images/fade.imageset/fade@2x.jpg
+new file mode 100644
+index 0000000..9f0b8fa
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/fade.imageset/fade@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/fade.imageset/fade@3x.jpg b/AgentList/Assets.xcassets/images/fade.imageset/fade@3x.jpg
+new file mode 100644
+index 0000000..d8a05b8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/fade.imageset/fade@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/gekko-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/gekko-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..83e64fa
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/gekko-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "gekko-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "gekko-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "gekko-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill.png b/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill.png
+new file mode 100644
+index 0000000..ce336e6
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill@2x.png b/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill@2x.png
+new file mode 100644
+index 0000000..d0b3df8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill@3x.png b/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill@3x.png
+new file mode 100644
+index 0000000..e2d5d3c
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/gekko-skill.imageset/gekko-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/gekko.imageset/Contents.json b/AgentList/Assets.xcassets/images/gekko.imageset/Contents.json
+new file mode 100644
+index 0000000..d5a0f8b
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/gekko.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "gekko.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "gekko@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "gekko@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/gekko.imageset/gekko.jpg b/AgentList/Assets.xcassets/images/gekko.imageset/gekko.jpg
+new file mode 100644
+index 0000000..9480848
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/gekko.imageset/gekko.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/gekko.imageset/gekko@2x.jpg b/AgentList/Assets.xcassets/images/gekko.imageset/gekko@2x.jpg
+new file mode 100644
+index 0000000..dc82189
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/gekko.imageset/gekko@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/gekko.imageset/gekko@3x.jpg b/AgentList/Assets.xcassets/images/gekko.imageset/gekko@3x.jpg
+new file mode 100644
+index 0000000..e2aaa3d
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/gekko.imageset/gekko@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/harbor-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/harbor-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..0128b6f
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/harbor-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "harbor-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "harbor-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "harbor-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill.png b/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill.png
+new file mode 100644
+index 0000000..41ec2a8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill@2x.png b/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill@2x.png
+new file mode 100644
+index 0000000..f25d20f
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill@3x.png b/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill@3x.png
+new file mode 100644
+index 0000000..83fe7b9
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/harbor-skill.imageset/harbor-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/harbor.imageset/Contents.json b/AgentList/Assets.xcassets/images/harbor.imageset/Contents.json
+new file mode 100644
+index 0000000..64bea04
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/harbor.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "harbor.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "harbor@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "harbor@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/harbor.imageset/harbor.jpg b/AgentList/Assets.xcassets/images/harbor.imageset/harbor.jpg
+new file mode 100644
+index 0000000..f6274d8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/harbor.imageset/harbor.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/harbor.imageset/harbor@2x.jpg b/AgentList/Assets.xcassets/images/harbor.imageset/harbor@2x.jpg
+new file mode 100644
+index 0000000..2a89caf
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/harbor.imageset/harbor@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/harbor.imageset/harbor@3x.jpg b/AgentList/Assets.xcassets/images/harbor.imageset/harbor@3x.jpg
+new file mode 100644
+index 0000000..7c999df
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/harbor.imageset/harbor@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/iso-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/iso-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..faab304
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/iso-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "iso-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "iso-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "iso-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill.png b/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill.png
+new file mode 100644
+index 0000000..e7902bf
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill@2x.png b/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill@2x.png
+new file mode 100644
+index 0000000..5c7a015
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill@3x.png b/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill@3x.png
+new file mode 100644
+index 0000000..95a9b96
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/iso-skill.imageset/iso-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/iso.imageset/Contents.json b/AgentList/Assets.xcassets/images/iso.imageset/Contents.json
+new file mode 100644
+index 0000000..eaeaa05
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/iso.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "iso.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "iso@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "iso@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/iso.imageset/iso.jpg b/AgentList/Assets.xcassets/images/iso.imageset/iso.jpg
+new file mode 100644
+index 0000000..c1966f3
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/iso.imageset/iso.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/iso.imageset/iso@2x.jpg b/AgentList/Assets.xcassets/images/iso.imageset/iso@2x.jpg
+new file mode 100644
+index 0000000..b3c9e41
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/iso.imageset/iso@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/iso.imageset/iso@3x.jpg b/AgentList/Assets.xcassets/images/iso.imageset/iso@3x.jpg
+new file mode 100644
+index 0000000..2e5c827
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/iso.imageset/iso@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/jett-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/jett-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..84bc46d
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/jett-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "jett-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "jett-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "jett-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill.png b/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill.png
+new file mode 100644
+index 0000000..e5984a3
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill@2x.png b/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill@2x.png
+new file mode 100644
+index 0000000..7f0ee23
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill@3x.png b/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill@3x.png
+new file mode 100644
+index 0000000..e757788
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/jett-skill.imageset/jett-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/jett.imageset/Contents.json b/AgentList/Assets.xcassets/images/jett.imageset/Contents.json
+new file mode 100644
+index 0000000..de43c8f
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/jett.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "jett.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "jett@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "jett@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/jett.imageset/jett.jpg b/AgentList/Assets.xcassets/images/jett.imageset/jett.jpg
+new file mode 100644
+index 0000000..9680e0d
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/jett.imageset/jett.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/jett.imageset/jett@2x.jpg b/AgentList/Assets.xcassets/images/jett.imageset/jett@2x.jpg
+new file mode 100644
+index 0000000..5e0ffe1
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/jett.imageset/jett@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/jett.imageset/jett@3x.jpg b/AgentList/Assets.xcassets/images/jett.imageset/jett@3x.jpg
+new file mode 100644
+index 0000000..5f185f7
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/jett.imageset/jett@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/kayo-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/kayo-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..09b3df1
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/kayo-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "kayo-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "kayo-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "kayo-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill.png b/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill.png
+new file mode 100644
+index 0000000..c3ff182
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill@2x.png b/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill@2x.png
+new file mode 100644
+index 0000000..7fbe074
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill@3x.png b/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill@3x.png
+new file mode 100644
+index 0000000..3962e72
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/kayo-skill.imageset/kayo-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/kayo.imageset/Contents.json b/AgentList/Assets.xcassets/images/kayo.imageset/Contents.json
+new file mode 100644
+index 0000000..2e9a48b
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/kayo.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "kayo.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "kayo@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "kayo@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/kayo.imageset/kayo.jpg b/AgentList/Assets.xcassets/images/kayo.imageset/kayo.jpg
+new file mode 100644
+index 0000000..d4c2d5b
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/kayo.imageset/kayo.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/kayo.imageset/kayo@2x.jpg b/AgentList/Assets.xcassets/images/kayo.imageset/kayo@2x.jpg
+new file mode 100644
+index 0000000..9a3fcf8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/kayo.imageset/kayo@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/kayo.imageset/kayo@3x.jpg b/AgentList/Assets.xcassets/images/kayo.imageset/kayo@3x.jpg
+new file mode 100644
+index 0000000..fe43da7
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/kayo.imageset/kayo@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/killjoy-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..0695030
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "killjoy-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "killjoy-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "killjoy-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill.png b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill.png
+new file mode 100644
+index 0000000..b09ed56
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill@2x.png b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill@2x.png
+new file mode 100644
+index 0000000..5725815
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill@3x.png b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill@3x.png
+new file mode 100644
+index 0000000..d55e4c4
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/killjoy-skill.imageset/killjoy-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/killjoy.imageset/Contents.json b/AgentList/Assets.xcassets/images/killjoy.imageset/Contents.json
+new file mode 100644
+index 0000000..a8e58c8
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/killjoy.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "killjoy.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "killjoy@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "killjoy@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy.jpg b/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy.jpg
+new file mode 100644
+index 0000000..bd2c32e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy@2x.jpg b/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy@2x.jpg
+new file mode 100644
+index 0000000..104f02b
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy@3x.jpg b/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy@3x.jpg
+new file mode 100644
+index 0000000..30cbb80
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/killjoy.imageset/killjoy@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/neon-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/neon-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..bdf0d3f
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/neon-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "neon-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "neon-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "neon-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill.png b/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill.png
+new file mode 100644
+index 0000000..8fc5192
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill@2x.png b/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill@2x.png
+new file mode 100644
+index 0000000..f44288e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill@3x.png b/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill@3x.png
+new file mode 100644
+index 0000000..4e13bfe
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/neon-skill.imageset/neon-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/neon.imageset/Contents.json b/AgentList/Assets.xcassets/images/neon.imageset/Contents.json
+new file mode 100644
+index 0000000..c018a26
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/neon.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "neon.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "neon@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "neon@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/neon.imageset/neon.jpg b/AgentList/Assets.xcassets/images/neon.imageset/neon.jpg
+new file mode 100644
+index 0000000..4c975f0
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/neon.imageset/neon.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/neon.imageset/neon@2x.jpg b/AgentList/Assets.xcassets/images/neon.imageset/neon@2x.jpg
+new file mode 100644
+index 0000000..4d367a0
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/neon.imageset/neon@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/neon.imageset/neon@3x.jpg b/AgentList/Assets.xcassets/images/neon.imageset/neon@3x.jpg
+new file mode 100644
+index 0000000..7adfb58
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/neon.imageset/neon@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/omen-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/omen-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..1dc61be
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/omen-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "omen-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "omen-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "omen-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill.png b/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill.png
+new file mode 100644
+index 0000000..4031ac1
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill@2x.png b/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill@2x.png
+new file mode 100644
+index 0000000..64ca6e1
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill@3x.png b/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill@3x.png
+new file mode 100644
+index 0000000..22882e2
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/omen-skill.imageset/omen-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/omen.imageset/Contents.json b/AgentList/Assets.xcassets/images/omen.imageset/Contents.json
+new file mode 100644
+index 0000000..8599e30
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/omen.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "omen.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "omen@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "omen@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/omen.imageset/omen.jpg b/AgentList/Assets.xcassets/images/omen.imageset/omen.jpg
+new file mode 100644
+index 0000000..4faad00
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/omen.imageset/omen.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/omen.imageset/omen@2x.jpg b/AgentList/Assets.xcassets/images/omen.imageset/omen@2x.jpg
+new file mode 100644
+index 0000000..0d6a8a9
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/omen.imageset/omen@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/omen.imageset/omen@3x.jpg b/AgentList/Assets.xcassets/images/omen.imageset/omen@3x.jpg
+new file mode 100644
+index 0000000..84e0292
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/omen.imageset/omen@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/phoenix-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..7efea77
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "phoenix-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "phoenix-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "phoenix-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill.png b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill.png
+new file mode 100644
+index 0000000..1510a6b
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill@2x.png b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill@2x.png
+new file mode 100644
+index 0000000..877ff5c
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill@3x.png b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill@3x.png
+new file mode 100644
+index 0000000..821d130
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/phoenix-skill.imageset/phoenix-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/phoenix.imageset/Contents.json b/AgentList/Assets.xcassets/images/phoenix.imageset/Contents.json
+new file mode 100644
+index 0000000..ac6226c
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/phoenix.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "phoenix.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "phoenix@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "phoenix@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix.jpg b/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix.jpg
+new file mode 100644
+index 0000000..611865f
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix@2x.jpg b/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix@2x.jpg
+new file mode 100644
+index 0000000..47b7090
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix@3x.jpg b/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix@3x.jpg
+new file mode 100644
+index 0000000..d690804
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/phoenix.imageset/phoenix@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/raze-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/raze-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..877c98e
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/raze-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "raze-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "raze-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "raze-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill.png b/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill.png
+new file mode 100644
+index 0000000..5f4d460
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill@2x.png b/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill@2x.png
+new file mode 100644
+index 0000000..e259429
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill@3x.png b/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill@3x.png
+new file mode 100644
+index 0000000..db1d8f0
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/raze-skill.imageset/raze-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/raze.imageset/Contents.json b/AgentList/Assets.xcassets/images/raze.imageset/Contents.json
+new file mode 100644
+index 0000000..c45ab6a
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/raze.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "raze.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "raze@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "raze@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/raze.imageset/raze.jpg b/AgentList/Assets.xcassets/images/raze.imageset/raze.jpg
+new file mode 100644
+index 0000000..ae24545
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/raze.imageset/raze.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/raze.imageset/raze@2x.jpg b/AgentList/Assets.xcassets/images/raze.imageset/raze@2x.jpg
+new file mode 100644
+index 0000000..43e271e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/raze.imageset/raze@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/raze.imageset/raze@3x.jpg b/AgentList/Assets.xcassets/images/raze.imageset/raze@3x.jpg
+new file mode 100644
+index 0000000..1d34480
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/raze.imageset/raze@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/reyna-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/reyna-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..2be25ef
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/reyna-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "reyna-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "reyna-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "reyna-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill.png b/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill.png
+new file mode 100644
+index 0000000..666e290
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill@2x.png b/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill@2x.png
+new file mode 100644
+index 0000000..38b2e80
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill@3x.png b/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill@3x.png
+new file mode 100644
+index 0000000..023edaa
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/reyna-skill.imageset/reyna-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/reyna.imageset/Contents.json b/AgentList/Assets.xcassets/images/reyna.imageset/Contents.json
+new file mode 100644
+index 0000000..6af1bab
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/reyna.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "reyna.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "reyna@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "reyna@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/reyna.imageset/reyna.jpg b/AgentList/Assets.xcassets/images/reyna.imageset/reyna.jpg
+new file mode 100644
+index 0000000..a16bbc3
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/reyna.imageset/reyna.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/reyna.imageset/reyna@2x.jpg b/AgentList/Assets.xcassets/images/reyna.imageset/reyna@2x.jpg
+new file mode 100644
+index 0000000..68c8e7c
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/reyna.imageset/reyna@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/reyna.imageset/reyna@3x.jpg b/AgentList/Assets.xcassets/images/reyna.imageset/reyna@3x.jpg
+new file mode 100644
+index 0000000..17bcd45
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/reyna.imageset/reyna@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/sage-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/sage-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..3e1c440
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/sage-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "sage-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "sage-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "sage-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill.png b/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill.png
+new file mode 100644
+index 0000000..f60087c
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill@2x.png b/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill@2x.png
+new file mode 100644
+index 0000000..8b92109
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill@3x.png b/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill@3x.png
+new file mode 100644
+index 0000000..da331ff
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sage-skill.imageset/sage-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/sage.imageset/Contents.json b/AgentList/Assets.xcassets/images/sage.imageset/Contents.json
+new file mode 100644
+index 0000000..890de13
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/sage.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "sage.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "sage@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "sage@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/sage.imageset/sage.jpg b/AgentList/Assets.xcassets/images/sage.imageset/sage.jpg
+new file mode 100644
+index 0000000..12d1dad
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sage.imageset/sage.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/sage.imageset/sage@2x.jpg b/AgentList/Assets.xcassets/images/sage.imageset/sage@2x.jpg
+new file mode 100644
+index 0000000..806499e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sage.imageset/sage@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/sage.imageset/sage@3x.jpg b/AgentList/Assets.xcassets/images/sage.imageset/sage@3x.jpg
+new file mode 100644
+index 0000000..d4aac1c
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sage.imageset/sage@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/skye-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/skye-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..2880c6a
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/skye-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "skye-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "skye-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "skye-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill.png b/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill.png
+new file mode 100644
+index 0000000..40f4e03
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill@2x.png b/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill@2x.png
+new file mode 100644
+index 0000000..12cb69e
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill@3x.png b/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill@3x.png
+new file mode 100644
+index 0000000..c5c16a7
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/skye-skill.imageset/skye-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/skye.imageset/Contents.json b/AgentList/Assets.xcassets/images/skye.imageset/Contents.json
+new file mode 100644
+index 0000000..59865ab
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/skye.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "skye.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "skye@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "skye@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/skye.imageset/skye.jpg b/AgentList/Assets.xcassets/images/skye.imageset/skye.jpg
+new file mode 100644
+index 0000000..64e715c
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/skye.imageset/skye.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/skye.imageset/skye@2x.jpg b/AgentList/Assets.xcassets/images/skye.imageset/skye@2x.jpg
+new file mode 100644
+index 0000000..da4e554
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/skye.imageset/skye@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/skye.imageset/skye@3x.jpg b/AgentList/Assets.xcassets/images/skye.imageset/skye@3x.jpg
+new file mode 100644
+index 0000000..0a0f2b5
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/skye.imageset/skye@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/sova-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/sova-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..92b7ca9
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/sova-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "sova-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "sova-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "sova-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill.png b/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill.png
+new file mode 100644
+index 0000000..568299d
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill@2x.png b/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill@2x.png
+new file mode 100644
+index 0000000..e8431c3
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill@3x.png b/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill@3x.png
+new file mode 100644
+index 0000000..3a55d85
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sova-skill.imageset/sova-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/sova.imageset/Contents.json b/AgentList/Assets.xcassets/images/sova.imageset/Contents.json
+new file mode 100644
+index 0000000..7202df8
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/sova.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "sova.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "sova@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "sova@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/sova.imageset/sova.jpg b/AgentList/Assets.xcassets/images/sova.imageset/sova.jpg
+new file mode 100644
+index 0000000..d5575cd
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sova.imageset/sova.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/sova.imageset/sova@2x.jpg b/AgentList/Assets.xcassets/images/sova.imageset/sova@2x.jpg
+new file mode 100644
+index 0000000..abeffca
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sova.imageset/sova@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/sova.imageset/sova@3x.jpg b/AgentList/Assets.xcassets/images/sova.imageset/sova@3x.jpg
+new file mode 100644
+index 0000000..2c660bd
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/sova.imageset/sova@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/valorant-icon.imageset/Contents.json b/AgentList/Assets.xcassets/images/valorant-icon.imageset/Contents.json
+new file mode 100644
+index 0000000..9c0fbc1
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/valorant-icon.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "valorant-icon.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "valorant-icon@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "valorant-icon@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon.jpg b/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon.jpg
+new file mode 100644
+index 0000000..cc9aab9
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon@2x.jpg b/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon@2x.jpg
+new file mode 100644
+index 0000000..2cd58ec
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon@3x.jpg b/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon@3x.jpg
+new file mode 100644
+index 0000000..c9d831c
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/valorant-icon.imageset/valorant-icon@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/viper-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/viper-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..5fb1fef
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/viper-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "viper-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "viper-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "viper-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill.png b/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill.png
+new file mode 100644
+index 0000000..44c6610
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill@2x.png b/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill@2x.png
+new file mode 100644
+index 0000000..c03efdc
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill@3x.png b/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill@3x.png
+new file mode 100644
+index 0000000..5852b60
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/viper-skill.imageset/viper-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/viper.imageset/Contents.json b/AgentList/Assets.xcassets/images/viper.imageset/Contents.json
+new file mode 100644
+index 0000000..49a1fe3
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/viper.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "viper.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "viper@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "viper@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/viper.imageset/viper.jpg b/AgentList/Assets.xcassets/images/viper.imageset/viper.jpg
+new file mode 100644
+index 0000000..829cdbf
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/viper.imageset/viper.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/viper.imageset/viper@2x.jpg b/AgentList/Assets.xcassets/images/viper.imageset/viper@2x.jpg
+new file mode 100644
+index 0000000..8a14457
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/viper.imageset/viper@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/viper.imageset/viper@3x.jpg b/AgentList/Assets.xcassets/images/viper.imageset/viper@3x.jpg
+new file mode 100644
+index 0000000..474e5fe
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/viper.imageset/viper@3x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/yoru-skill.imageset/Contents.json b/AgentList/Assets.xcassets/images/yoru-skill.imageset/Contents.json
+new file mode 100644
+index 0000000..326cb6a
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/yoru-skill.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "yoru-skill.png",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "yoru-skill@2x.png",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "yoru-skill@3x.png",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill.png b/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill.png
+new file mode 100644
+index 0000000..d8d9dd8
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill.png differ
+diff --git a/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill@2x.png b/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill@2x.png
+new file mode 100644
+index 0000000..011a4fd
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill@2x.png differ
+diff --git a/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill@3x.png b/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill@3x.png
+new file mode 100644
+index 0000000..f64a8f6
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/yoru-skill.imageset/yoru-skill@3x.png differ
+diff --git a/AgentList/Assets.xcassets/images/yoru.imageset/Contents.json b/AgentList/Assets.xcassets/images/yoru.imageset/Contents.json
+new file mode 100644
+index 0000000..9f1b34b
+--- /dev/null
++++ b/AgentList/Assets.xcassets/images/yoru.imageset/Contents.json
+@@ -0,0 +1,23 @@
++{
++  "images" : [
++    {
++      "filename" : "yoru.jpg",
++      "idiom" : "universal",
++      "scale" : "1x"
++    },
++    {
++      "filename" : "yoru@2x.jpg",
++      "idiom" : "universal",
++      "scale" : "2x"
++    },
++    {
++      "filename" : "yoru@3x.jpg",
++      "idiom" : "universal",
++      "scale" : "3x"
++    }
++  ],
++  "info" : {
++    "author" : "xcode",
++    "version" : 1
++  }
++}
+diff --git a/AgentList/Assets.xcassets/images/yoru.imageset/yoru.jpg b/AgentList/Assets.xcassets/images/yoru.imageset/yoru.jpg
+new file mode 100644
+index 0000000..6067451
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/yoru.imageset/yoru.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/yoru.imageset/yoru@2x.jpg b/AgentList/Assets.xcassets/images/yoru.imageset/yoru@2x.jpg
+new file mode 100644
+index 0000000..83786ec
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/yoru.imageset/yoru@2x.jpg differ
+diff --git a/AgentList/Assets.xcassets/images/yoru.imageset/yoru@3x.jpg b/AgentList/Assets.xcassets/images/yoru.imageset/yoru@3x.jpg
+new file mode 100644
+index 0000000..bcb4e5f
+Binary files /dev/null and b/AgentList/Assets.xcassets/images/yoru.imageset/yoru@3x.jpg differ
+diff --git a/AgentList/ContentView.swift b/AgentList/ContentView.swift
+deleted file mode 100644
+index 517b514..0000000
+--- a/AgentList/ContentView.swift
++++ /dev/null
+@@ -1,24 +0,0 @@
+-//
+-//  ContentView.swift
+-//  AgentList
+-//
+-//  Created by Long Phung on 6/8/24.
+-//
+-
+-import SwiftUI
+-
+-struct ContentView: View {
+-    var body: some View {
+-        VStack {
+-            Image(systemName: "globe")
+-                .imageScale(.large)
+-                .foregroundStyle(.tint)
+-            Text("Hello, world!")
+-        }
+-        .padding()
+-    }
+-}
+-
+-#Preview {
+-    ContentView()
+-}
+diff --git a/AgentList/Info.plist b/AgentList/Info.plist
+new file mode 100644
+index 0000000..904bfc3
+--- /dev/null
++++ b/AgentList/Info.plist
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++<plist version="1.0">
++<dict>
++	<key>UIAppFonts</key>
++	<array>
++		<string>Coiny-Regular.ttf</string>
++	</array>
++</dict>
++</plist>
+diff --git a/AgentList/Model/Agent.swift b/AgentList/Model/Agent.swift
+new file mode 100644
+index 0000000..a19182e
+--- /dev/null
++++ b/AgentList/Model/Agent.swift
+@@ -0,0 +1,71 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import Foundation
++import SwiftUI
++import CoreLocation
++import MapKit
++
++struct Agent: Identifiable, Codable {
++    var id: Int
++    var name: String
++    var role: String
++    var background: String
++    var imageName: String
++    var imageSkillName: String
++    var coordinates: Coordinates
++    var isFavorite: Bool = false
++    
++    var image: Image {
++        Image(imageName)
++    }
++    
++    var skillImage: Image {
++        Image(imageSkillName)
++    }
++
++    var locationCoordinate: CLLocationCoordinate2D {
++        CLLocationCoordinate2D(
++            latitude: coordinates.latitude,
++            longitude: coordinates.longitude
++        )
++    }
++
++
++    init(id: Int, name: String, role: String, background: String, imageName: String, imageSkillName: String, coordinates: Coordinates, isFavorite: Bool = false) {
++        self.id = id
++        self.name = name
++        self.role = role
++        self.background = background
++        self.imageName = imageName
++        self.imageSkillName = imageSkillName
++        self.coordinates = coordinates
++        self.isFavorite = isFavorite
++    }
++    
++
++    enum CodingKeys: String, CodingKey {
++        case id
++        case name
++        case role
++        case background
++        case imageName
++        case imageSkillName
++        case coordinates
++        case isFavorite
++    }
++}
++
++struct Coordinates: Codable {
++    var latitude: Double
++    var longitude: Double
++}
+diff --git a/AgentList/Model/ModelData.swift b/AgentList/Model/ModelData.swift
+new file mode 100644
+index 0000000..11d9c44
+--- /dev/null
++++ b/AgentList/Model/ModelData.swift
+@@ -0,0 +1,35 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import Foundation
++import CoreLocation
++import MapKit
++
++var agents = decodeJsonFromJsonFile(jsonFileName: "agents.json")
++
++
++func decodeJsonFromJsonFile(jsonFileName: String) -> [Agent] {
++    if let file = Bundle.main.url(forResource: jsonFileName, withExtension: nil){
++        if let data = try? Data(contentsOf: file) {
++            do {
++                let decoder = JSONDecoder()
++                let decoded = try decoder.decode([Agent].self, from: data)
++                return decoded
++            } catch let error {
++                fatalError("Failed to decode JSON: \(error)")
++            }
++        }
++    } else {
++        fatalError("Couldn't load \(jsonFileName) file")
++    }
++    return [ ] as [Agent]
++}
+diff --git a/AgentList/Views/AgentCard.swift b/AgentList/Views/AgentCard.swift
+new file mode 100644
+index 0000000..6cd0748
+--- /dev/null
++++ b/AgentList/Views/AgentCard.swift
+@@ -0,0 +1,102 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++import CoreLocation
++
++struct AgentCard: View {
++    var agent: Agent
++    @Binding var isFavorite: Bool
++
++    private func color(for role: String) -> Color {
++        switch role {
++        case "Controller":
++            return .orange
++        case "Duelist":
++            return .red
++        case "Sentinel":
++            return .cyan
++        case "Initiator":
++            return .purple
++        default:
++            return .gray
++        }
++    }
++
++    var body: some View {
++        ZStack {
++            Color("valorant-dark")
++                .edgesIgnoringSafeArea(.bottom)
++            ScrollView {
++                VStack {
++                    MapView(coordinate: agent.locationCoordinate)
++                        .edgesIgnoringSafeArea(.top)
++                        .frame(height: 250)
++                    CircleImage(image: agent.image)
++                        .offset(y: -100)
++                        .padding(.bottom, -100)
++                    
++                    VStack {
++                        Text(agent.name)
++                            .font(.custom("Coiny-Regular", size: 40))
++                            .bold()
++                            .foregroundColor(.white)
++                        
++                        Button(action: {
++                            isFavorite.toggle()
++                        }) {
++                            Image(systemName: isFavorite ? "star.fill" : "star")
++                                .foregroundColor(isFavorite ? .yellow : .gray)
++                                .font(.system(size: 30))
++                        }
++                    }
++                    .padding(.horizontal)
++                    
++                    Text("⭐️ \(agent.role) ⭐️")
++                        .font(.custom("Coiny-Regular", size: 25))
++                        .bold()
++                        .foregroundColor(color(for: agent.role)) // Updated color
++                    
++                    Text("🏅Background : ")
++                        .font(.custom("Coiny-Regular", size: 25))
++                        .bold()
++                        .foregroundColor(.white)
++                        .padding(3)
++                        .frame(maxWidth: .infinity, alignment: .leading)
++                    
++                    Text(agent.background)
++                        .font(.custom("Coiny-Regular", size: 25))
++                        .bold()
++                        .foregroundColor(.white) // Text color
++                        .padding()
++                        .background(Color(.darkGray)) // Background color
++                        .cornerRadius(10) // Rounded corners
++                        .frame(maxWidth: .infinity, alignment: .leading)
++                    
++                    // Skill Image
++                    agent.skillImage
++                        .resizable()
++                        .scaledToFit()
++                        .padding(.top, 20)
++                }
++                .padding()
++            }
++        }
++        .navigationBarTitleDisplayMode(.inline)
++    }
++}
++
++struct AgentCard_Previews: PreviewProvider {
++    static var previews: some View {
++        AgentCard(agent: agents[0], isFavorite: .constant(false))
++    }
++}
+diff --git a/AgentList/Views/AgentList.swift b/AgentList/Views/AgentList.swift
+new file mode 100644
+index 0000000..cc4d844
+--- /dev/null
++++ b/AgentList/Views/AgentList.swift
+@@ -0,0 +1,72 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++
++struct AgentList: View {
++    @State private var agents: [Agent] = decodeJsonFromJsonFile(jsonFileName: "agents.json")
++    @State private var isDarkMode = false
++    @State private var searchText = ""
++    @State private var showFavoritesOnly = false
++
++    @Environment(\.colorScheme) var colorScheme
++
++    var filteredAgents: [Agent] {
++        let lowercasedSearchText = searchText.lowercased()
++        return agents.filter { agent in
++            let matchesSearchText = lowercasedSearchText.isEmpty || agent.name.lowercased().contains(lowercasedSearchText)
++            let matchesFavoriteFilter = !showFavoritesOnly || agent.isFavorite
++            return matchesSearchText && matchesFavoriteFilter
++        }
++    }
++
++    var body: some View {
++        NavigationView {
++            VStack {
++                SearchBar(text: $searchText)
++                    .font(.custom("Coiny-Regular", size: 18))
++                Toggle(isOn: $showFavoritesOnly) {
++                    Text("Favorite Agents")
++                        .padding(.leading)
++                        .font(.custom("Coiny-Regular", size: 18))
++                        .bold()
++                }
++                .padding()
++
++                List {
++                    ForEach(filteredAgents) { agent in
++                        NavigationLink {
++                            AgentCard(agent: agent, isFavorite: $agents[agents.firstIndex(where: { $0.id == agent.id })!].isFavorite)
++                        } label: {
++                            AgentRow(agent: agent, isFavorite: $agents[agents.firstIndex(where: { $0.id == agent.id })!].isFavorite)
++                                .font(.custom("Coiny-Regular", size: 18))
++                        }
++                    }
++                }
++                .navigationTitle("Valorant Agent 🔫")
++                .font(.custom("Coiny-Regular", size: 24))
++                .navigationBarItems(trailing: Button(action: {
++                    isDarkMode.toggle()
++                }) {
++                    Image(systemName: colorScheme == .dark ? "sun.max.fill" : "moon.fill")
++                })
++                .preferredColorScheme(isDarkMode ? .dark : .light)
++            }
++        }
++    }
++}
++
++struct AgentList_Previews: PreviewProvider {
++    static var previews: some View {
++        AgentList()
++    }
++}
+diff --git a/AgentList/Views/AgentRow.swift b/AgentList/Views/AgentRow.swift
+new file mode 100644
+index 0000000..ecc2a91
+--- /dev/null
++++ b/AgentList/Views/AgentRow.swift
+@@ -0,0 +1,92 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++
++struct AgentRow: View {
++    var agent: Agent
++    @Binding var isFavorite: Bool
++
++    private func gradient(for role: String) -> LinearGradient {
++        switch role {
++        case "Controller":
++            return LinearGradient(
++                gradient: Gradient(colors: [.orange, .black]),
++                startPoint: .leading,
++                endPoint: .trailing
++            )
++        case "Duelist":
++            return LinearGradient(
++                gradient: Gradient(colors: [.red, .black]),
++                startPoint: .leading,
++                endPoint: .trailing
++            )
++        case "Sentinel":
++            return LinearGradient(
++                gradient: Gradient(colors: [.cyan, .black]),
++                startPoint: .leading,
++                endPoint: .trailing
++            )
++        case "Initiator":
++            return LinearGradient(
++                gradient: Gradient(colors: [.purple, .black]),
++                startPoint: .leading,
++                endPoint: .trailing
++            )
++        default:
++            return LinearGradient(
++                gradient: Gradient(colors: [.gray, .black]),
++                startPoint: .leading,
++                endPoint: .trailing
++            )
++        }
++    }
++
++    var body: some View {
++        HStack {
++            agent.image
++                .resizable()
++                .scaledToFit()
++                .frame(width: 70, height: 70) // Increased size
++                .clipShape(RoundedRectangle(cornerRadius: 15)) // Added border radius
++                .overlay(
++                    RoundedRectangle(cornerRadius: 15)
++                        .stroke(Color.white, lineWidth: 2) // Border color and width
++                )
++            VStack(alignment: .leading) {
++                Text(agent.name)
++                    .font(.custom("Coiny-Regular", size: 18))
++                    .foregroundColor(.white)
++                Text(agent.role)
++                    .font(.custom("Coiny-Regular", size: 14))
++                    .foregroundColor(.white) // Ensure text color contrasts with gradient
++            }
++            Spacer()
++            Button(action: {
++                isFavorite.toggle()
++            }) {
++                Image(systemName: isFavorite ? "star.fill" : "star")
++                    .foregroundColor(isFavorite ? .yellow : .gray)
++            }
++        }
++        .padding()
++        .background(gradient(for: agent.role))
++        .clipShape(RoundedRectangle(cornerRadius: 15))
++    }
++}
++
++struct AgentRow_Previews: PreviewProvider {
++    static var previews: some View {
++        AgentRow(agent: agents[0], isFavorite: .constant(false))
++            .previewLayout(.fixed(width: 300, height: 100)) 
++    }
++}
+diff --git a/AgentList/Views/CircleImage.swift b/AgentList/Views/CircleImage.swift
+new file mode 100644
+index 0000000..d6164cd
+--- /dev/null
++++ b/AgentList/Views/CircleImage.swift
+@@ -0,0 +1,30 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++
++struct CircleImage: View {
++    var image: Image
++    
++    var body: some View {
++        image
++            .clipShape(Circle())
++            .overlay(Circle().stroke(Color(.white),lineWidth: 4))
++            .shadow(radius: 7)
++    }
++}
++
++struct CircleImage_Previews: PreviewProvider {
++    static var previews: some View{
++        CircleImage(image: Image("brimstone"))
++    }
++}
+diff --git a/AgentList/Views/ContentView.swift b/AgentList/Views/ContentView.swift
+new file mode 100644
+index 0000000..5f6d9a4
+--- /dev/null
++++ b/AgentList/Views/ContentView.swift
+@@ -0,0 +1,25 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++
++struct ContentView: View {
++    var body: some View {
++        Welcome()
++    }
++}
++
++struct ContentView_Previews: PreviewProvider {
++    static var previews: some View {
++        AgentList()
++    }
++}
+diff --git a/AgentList/Views/MapView.swift b/AgentList/Views/MapView.swift
+new file mode 100644
+index 0000000..6815643
+--- /dev/null
++++ b/AgentList/Views/MapView.swift
+@@ -0,0 +1,34 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++import MapKit
++
++struct MapView: UIViewRepresentable {
++    var coordinate: CLLocationCoordinate2D
++    
++    func makeUIView(context: Context) -> MKMapView {
++        MKMapView(frame: .zero)
++    }
++    
++    func updateUIView(_ uiView: MKMapView, context: Context) {
++        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
++        let region = MKCoordinateRegion(center: coordinate, span: span)
++        uiView.setRegion(region, animated: true)
++    }
++}
++
++struct MapView_Previews: PreviewProvider {
++    static var previews: some View {
++        MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011286, longitude: -116.166868))
++    }
++}
+diff --git a/AgentList/Views/SearchBar.swift b/AgentList/Views/SearchBar.swift
+new file mode 100644
+index 0000000..4d3e4fb
+--- /dev/null
++++ b/AgentList/Views/SearchBar.swift
+@@ -0,0 +1,43 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++
++struct SearchBar: UIViewRepresentable {
++    @Binding var text: String
++
++    class Coordinator: NSObject, UISearchBarDelegate {
++        @Binding var text: String
++
++        init(text: Binding<String>) {
++            _text = text
++        }
++
++        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
++            text = searchText
++        }
++    }
++
++    func makeCoordinator() -> Coordinator {
++        return Coordinator(text: $text)
++    }
++
++    func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
++        let searchBar = UISearchBar(frame: .zero)
++        searchBar.delegate = context.coordinator
++        return searchBar
++    }
++
++    func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar>) {
++        uiView.text = text
++    }
++}
+diff --git a/AgentList/Views/Welcome.swift b/AgentList/Views/Welcome.swift
+new file mode 100644
+index 0000000..78e11ef
+--- /dev/null
++++ b/AgentList/Views/Welcome.swift
+@@ -0,0 +1,149 @@
++/*
++  RMIT University Vietnam
++  Course: COSC2659|COSC2813 iOS Development
++  Semester: 2024B
++  Assessment: Assignment 1
++  Author: Phung Hoang Long
++  ID: s3965673
++  Created  date: 05/08/2024
++  Last modified: 06/08/2024
++  Acknowledgement: SSET-Contact-List-iOS Turorial Week 4
++*/
++
++import SwiftUI
++
++struct Welcome: View {
++    @State private var showInfo = false
++    @State private var navigateToAgentList = false
++
++    var body: some View {
++        NavigationView {
++            ZStack {
++                LinearGradient(gradient: Gradient(colors: [Color("valorant-dark"), .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
++                    .edgesIgnoringSafeArea(.all)
++                
++                VStack {
++                
++                    Image("valorant-icon") // Ensure the image is added to your assets
++                        .resizable()
++                        .scaledToFit()
++                        .frame(width: 150, height: 150)
++                        .clipShape(RoundedRectangle(cornerRadius: 15))
++                        .padding(.top, 150)
++
++               
++                    Text(" Valorant Agent List")
++                        .font(.custom("Coiny", size: 34))
++                        .fontWeight(.bold)
++                        .foregroundColor(.white)
++                        .padding(.bottom, 50)
++                        .padding(.top,15)
++
++               
++                    Text("Know your Agent")
++                        .font(.custom("Coiny", size: 25))
++                        .fontWeight(.bold)
++                        .foregroundColor(.gray)
++                     
++                    Text("Become the Radiant")
++                        .font(.custom("Coiny", size: 25))
++                        .fontWeight(.bold)
++                        .foregroundColor(.gray)
++                        .padding(.bottom, 40)
++
++           
++                    NavigationLink(destination: AgentList(), isActive: $navigateToAgentList) {
++                        Button(action: {
++                            navigateToAgentList = true
++                        }) {
++                            Text("Start")
++                                .font(.custom("Coiny", size: 50))
++                                .padding()
++                                .border(Color.white)
++                                .foregroundColor(.valorantRed)
++                                .cornerRadius(5)
++                        }
++                    }
++                    
++                    Spacer()
++                }
++                .padding()
++                
++              
++                VStack {
++                    Spacer()
++                    HStack {
++                        Spacer()
++                        Button(action: {
++                            showInfo.toggle()
++                        }) {
++                            Image(systemName: "person.fill")
++                                .font(.title2)
++                                .foregroundColor(.white)
++                                .padding(10)
++                                .background(Color("valorantRed"))
++                                .clipShape(Circle())
++                        }
++                        .padding()
++                    }
++                }
++            }
++            .sheet(isPresented: $showInfo) {
++                InfoView()
++            }
++        }
++    }
++}
++
++struct InfoView: View {
++    var body: some View {
++        VStack {
++            Text("App Author:")
++                .font(.custom("Coiny", size: 22))
++                .foregroundColor(Color("valorant-dark"))
++                .padding(.bottom, 5)
++            Text("Phung Hoang Long")
++                .font(.custom("Coiny", size: 22))
++                .foregroundColor(Color("valorant-red"))
++                .padding(.bottom, 10)
++            Text("Student ID:")
++                .font(.custom("Coiny", size: 22))
++                .foregroundColor(Color("valorant-dark"))
++            Text(" s3965673")
++                .font(.custom("Coiny", size: 22))
++                .foregroundColor(Color("valorant-red"))
++            Text("Student ID:")
++                .font(.custom("Coiny", size: 22))
++                .foregroundColor(Color("valorant-dark"))
++            Text("Valorant Agent List")
++                .font(.custom("Coiny", size: 22))
++                .foregroundColor(Color("valorant-red"))
++                .padding(.bottom, 20)
++
++            Button(action: {
++            
++                UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true, completion: nil)
++            }) {
++                Text("Close")
++                    .font(.custom("Coiny", size: 20))
++                    .padding()
++                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
++                    .background(Color("valorantRed"))
++                    .foregroundColor(.black)
++                    .cornerRadius(10)
++            }
++        }
++        .padding()
++        .background(
++            LinearGradient(gradient: Gradient(colors: [Color("valorantRed"), Color.white.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
++        )
++        .cornerRadius(15)
++        .padding()
++    }
++}
++
++struct Welcome_Previews: PreviewProvider {
++    static var previews: some View {
++        Welcome()
++    }
++}
+diff --git a/Coiny-Regular.ttf b/Coiny-Regular.ttf
+new file mode 100644
+index 0000000..d753a24
+Binary files /dev/null and b/Coiny-Regular.ttf differ
